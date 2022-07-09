@@ -13,5 +13,4 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/perceptual-hash/show', [PerceptualHashController::class, 'show']);
+Route::get('/perceptual-hash', [PerceptualHashController::class, 'show']);

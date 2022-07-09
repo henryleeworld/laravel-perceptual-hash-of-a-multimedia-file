@@ -27,8 +27,8 @@ class PerceptualHashController extends Controller
      */
     public function show()
     {
-        $originalImageHash = $this->imageHash->hash(public_path('images/kamen-rider-black.jpg'));
-        $watermarkImageHash = $this->imageHash->hash(public_path('images/kamen-rider-black-with-watermark.jpg'));
+        $originalImageHash = $this->imageHash->hash(storage_path('images/kamen-rider-black.jpg'));
+        $watermarkImageHash = $this->imageHash->hash(storage_path('images/kamen-rider-black-with-watermark.jpg'));
         echo '原始圖片雜奏十六進位數字：' . $originalImageHash->toHex() . PHP_EOL;
         echo '原始圖片雜奏整數：' . $originalImageHash->toInt() . PHP_EOL;
         echo '浮水印圖片雜奏十六進位數字：' . $watermarkImageHash->toHex() . PHP_EOL;
