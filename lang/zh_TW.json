@@ -1,0 +1,9 @@
+{
+    "Original image bits image fingerprint: ": "原始圖片位元影像指紋：",
+    "Original image hexadecimal image fingerprint: ": "原始圖片十六進位影像指紋：",
+    "The difference between the original image and the watermarked image: ": "原始圖片和浮水印圖片差距：",
+    "The original image and the watermarked image are almost the same.": "原始圖片和浮水印圖片幾乎相同。",
+    "The original image and the watermarked image are different.": "原始圖片和浮水印圖片不同。",
+    "Watermarked image bits image fingerprint: ": "浮水印圖片位元影像指紋：",
+    "Watermarked image hexadecimal image fingerprint: ": "浮水印圖片十六進位影像指紋："
+}

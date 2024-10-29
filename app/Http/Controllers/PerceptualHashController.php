@@ -29,11 +29,11 @@ class PerceptualHashController extends Controller
     {
         $originalImageHash = $this->imageHash->hash(storage_path('images/kamen-rider-black.jpg'));
         $watermarkImageHash = $this->imageHash->hash(storage_path('images/kamen-rider-black-with-watermark.jpg'));
-        echo '原始圖片雜奏十六進位數字：' . $originalImageHash->toHex() . PHP_EOL;
-        echo '原始圖片雜奏位元：' . $originalImageHash->toBits() . PHP_EOL;
-        echo '浮水印圖片雜奏十六進位數字：' . $watermarkImageHash->toHex() . PHP_EOL;
-        echo '浮水印圖片雜奏位元：' . $watermarkImageHash->toBits() . PHP_EOL;
-        echo '原始圖片和浮水印圖片差距：' . $distance = $originalImageHash->distance($watermarkImageHash) . PHP_EOL;
-        echo ($distance <= 5) ? '原始圖片和浮水印圖片幾乎相同' : '原始圖片和浮水印圖片不同' . PHP_EOL;
+        echo __('Original image hexadecimal image fingerprint: ') . $originalImageHash->toHex() . PHP_EOL;
+        echo __('Original image bits image fingerprint: ') . $originalImageHash->toBits() . PHP_EOL;
+        echo __('Watermarked image hexadecimal image fingerprint: ') . $watermarkImageHash->toHex() . PHP_EOL;
+        echo __('Watermarked image bits image fingerprint: ') . $watermarkImageHash->toBits() . PHP_EOL;
+        echo __('The difference between the original image and the watermarked image: ') . $distance = $originalImageHash->distance($watermarkImageHash) . PHP_EOL;
+        echo ($distance <= 5) ? __('The original image and the watermarked image are almost the same.') : __('The original image and the watermarked image are different.') . PHP_EOL;
     }
 }
