@@ -21,9 +21,7 @@ class PerceptualHashController extends Controller
     }
 
     /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * Display the specified resource.
      */
     public function show()
     {

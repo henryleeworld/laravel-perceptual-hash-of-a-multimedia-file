@@ -1,4 +1,4 @@
-# Laravel 11 多媒體檔案的感知雜湊
+# Laravel 12 多媒體檔案的感知雜湊
 
 引入 jenssegers 的 imagehash 套件來擴增多媒體檔案的感知雜湊，感知雜湊的作用是對每張圖片生成一個指紋字串，然後進而比較不同圖片的指紋，如果結果越接近，就說明圖片越相似。
 
@@ -16,11 +16,15 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/perceptual-hash` 來進行一張圖片和該圖片加入浮水印的感知雜湊比較。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/Ey473GL.png)
+![](https://i.imgur.com/97jnUGz.png)
 > 如果不相同的數據位不超過 5，就說明兩張圖片很相似
