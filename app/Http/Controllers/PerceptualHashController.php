@@ -7,7 +7,6 @@ use Jenssegers\ImageHash\Implementations\DifferenceHash;
 
 class PerceptualHashController extends Controller
 {
-
     private $imageHash;
 
     /**
